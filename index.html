@@ -1,5 +1,59 @@
 <!doctype html>
 <html lang="en">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
 
 	<head>
 		<meta charset="utf-8" />
@@ -490,17 +544,59 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
 
 
 				<section>
-					<h2>El zoologica de fuentes de rayos X</h2>
 
-					<h3> We need Multiwavlength to accompkisht all goasl</h3>
+
+					<div height='100px'>
+					<h2>Un zoologico de fuentes de rayos X</h2>
+					<h4>¿Cómo se distinguen unas de otras?</h4>
+					</div>
+			
+<div class="altpanel" style="width: 100%">
+	<div>
+									<img width="300" src="images/GBS/wdns.png" alt="Grenoble INP" class="logo" />
+									<img  width="300" src="images/GBS/magcv.jpg" alt="G-SCOP" class="logo" />
+									<img width="300" src="images/GBS/Cygnus_X-1.png" alt="INRIA" class="logo" />
+								</div>
+
+								<div>
+									<img width="300" src="images/GBS/wumabinary.jpg" alt="Grenoble INP" class="logo" />
+									<img width="300" src="images/GBS/rscvn2.jpg" alt="G-SCOP" class="logo" />
+									<img width="300" src="images/GBS/starsMorgan.png" alt="INRIA" class="logo" />
+								</div>
+</div>
+
+<!--
+<div class="altpanel" style="width: 100%">
+<div class="row"> 
+  <div class="column">
+    <img src="images/GBS/wdns.png" style="width:100%">
+    <img src="images/GBS/wumabinary.jpg" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="images/GBS/amcvn.jpg" style="width:100%">
+    <img src="images/GBS/rscvn2.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/GBS/cvmagnetic.jpg" style="width:100%">
+    <img src="images/GBS/starsMorgan.png" style="width:100%">
+  </div>
+</div>
+</div>
+-->
+
+
 								<div style="margin-top: .5em;  line-height: 1">
-<h3 class='fragment' data-fragment-index='3'  > <i>Como se distinguen unas de otras?</i></h3>
+<h3 class='fragment' data-fragment-index='10'  > <i>Observaciones Multi-Ondas</i></h3>
 </div>
 
 				</section>
 
 
 				<section>
+					<aside class='notes'>
+						700 would be non-compact stars
+						(mostly RS CVn and W UMa stars), about 600 would be cataclysmic variables and about 300 would be X-ray binaries. maller numbers of  sources  are  expected  in  a  wide  var ety  of  other  classes  [e.g.background active galactic nuclei (AGN) and millisecond pulsars].
+					</aside>
 					<h3> Some predictions</h3>
 
 				</section>
@@ -508,22 +604,22 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
 
 
 				<section>
-					<h3> We need Multiwavlength to accompkisht all goasl. To identidy. </h3>
 
 					<ul>
-						<li>Identify</li>
-						<li>Dynamical Measurements</li>
+						<li>Radio:</li>
+						<ul><li>VLA Maca matcing</li></ul>
+						<li>Infrared:</li>
+						<ul><li>VVV</li></ul>
+						<li>Optical</li>
+						<ul><li>Blanco (Photometry)</li></ul>
+						<ul><li>VIMOS, Gemini, ... (Spectra)</li></ul>
 					</ul>
 
 				</section>
 
-		    <!-- Zoologico de fuentes de rayos X -->
 
 
-		    <!--  Proposito, que podemos aprender -->
 
-
-		    <!-- Trabajo detective  a uchas longitudes de ondas -->
 
 
 	</section> <!-- Bulbo galactico fin -->
@@ -535,6 +631,10 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
 	<section data-state="sky" data-chapter="Detective Work">
 
 		<h1> Detective Work </h1>
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car<br>
+</form>
 
 	</section>
 	<!--End Detective Work -->
