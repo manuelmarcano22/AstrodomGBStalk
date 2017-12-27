@@ -72,6 +72,11 @@ body {
 		<link rel="stylesheet" href="css/theme/defense.css" id="theme" />
         <link rel="stylesheet" href="css/phd.css" />
         <!--        <link rel="icon" href="/images/favicon/we-two-boys-together-clinging-1961-hockney.ico" type="image/x-icon"> -->
+	<!-- Aladin -->
+<!-- include Aladin Lite CSS file in the head section of your page -->
+<link rel="stylesheet" href="//aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" />
+<!-- you can skip the following line if your page already integrates the jQuery library -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.12.1.min.js" charset="utf-8"></script>
 
 
 		<!-- For syntax highlighting -->
@@ -461,6 +466,9 @@ Alguns numeros de la via lactia y al centro d ela via lactea.
 			    <aside class='notes'>
 The main idea is to image an area of 6x1 degrees centered on the Galactic Center at |b|=1.5 degrees: the Galactic Bulge Survey. 
 
+Bulge stars
+hold the imprints of how our Galaxy formed and evolved
+
 				    These regions have been selected because of their lower extinction and crowding in the optical and near-infrared than in the Galactic Center area, while still having a high density of X-ray sources. We have detected a plethora of faint X-ray sources that will constrain binary evolution models by way of a number count and by identifying predicted X-ray binary types that so far have eluded identification. We expect to find (quiescent) eclipsing neutron star and black hole LMXBs. These are important for neutron star and black hole mass measurements.These regions have been selected because of their lower extinction and crowding in the optical and near-infrared than in the Galactic Center area, while still having a high density of X-ray sources. We have detected a plethora of faint X-ray sources that will constrain binary evolution models by way of a number count and by identifying predicted X-ray binary types that so far have eluded identification. We expect to find (quiescent) eclipsing neutron star and black hole LMXBs. These are important for neutron star and black hole mass measurements.</aside>
 
 
@@ -472,7 +480,7 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
 							<ul>
                                     <li>Alta densidad de estrellas viejas y <em> objectos compactos</em></li>
 				    <ul><li>Alta densidad de estrellas binarias</li></ul>
-				    <li>En el centro alta contaminacion por <em>polvo </em> interestellar</li>
+				    <li>Alta contaminacion por <em>polvo </em> interestellar</li>
 				    <ul><li>Buscar arriba y abajo del centro</li></ul>
                                     </ul>
                             </li>
@@ -488,14 +496,32 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
                     </section>
 
 
+                   <section>
+                            <h2>¿Por qué las binarias de rayos X?</h2>
+                            
+			    <h4>La falsabilidad como pilar del método científico</h4>
+<!--<div class="block">
+        We have demonstrated how an IFU like <em>MUSE</em> can be used to efficiently study the population of compact objects in globular clusters. <em>Deeper observation</em> are needed but we exposed some hints that the population of field CVs and CVs in GCs are <em>different</em> -->					
+
+<div class="block">
+	Any viable evolution scheme must also reproduce the <em>distributions</em> of and <em>correlations</em> between these properties in the population of X-ray binaries.
+						</div>
+                    </section>
+
+
+
 		    <section>
+			    <aside class='notes'>
+				    The X-ray selected sample of LMXBs and CVs can be used to measure masses of black holes and neutron stars, and white dwarfs respectively. Dynamical masses are often the only secure way to discriminate between these source classes, and can address multiple science questions in their own right including i) the true stellar mass black hole mass distribution; ii) the reality of the apparent mass-gap between neutron stars and black holes; iii) the maximum mass of neutron stars; and iv) the discrepancy between predicted and observed white dwarf mass distributions. Masses derived from GBS objects will have less selection effects, or at least different selection effects, to the currently known masses.
+			    </aside>
+
 			    <div>
 
                             <h2>¿Por qué las binarias de rayos X?</h2>
 					<ul>
 							<li><b>Estadística:</b>
 							<ul>
-								<li>Constraint binary evolution. </li>
+								<li>Constraint binary evolution:</li>
 								<ul>
 									<li> Common envolope </li>
 									<li> Rate Supernova</li>
@@ -510,9 +536,6 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
 						</ul>
 </div>
 
-								<div style="margin-top: .5em;  line-height: 1">
-<h3 class='fragment' data-fragment-index='3'  > <i> Any viable evolution scheme must also reproduce the distributions of and correlations between these properties in the population of X-ray binaries.</i></h3>
-</div>
 
 
 
@@ -520,8 +543,71 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
 
 
 
+				<section>
+					<aside class='notes'>
+						700 would be non-compact stars
+						(mostly RS CVn and W UMa stars), about 600 would be cataclysmic variables and about 300 would be X-ray binaries. maller numbers of  sources  are  expected  in  a  wide  var ety  of  other  classes  [e.g.background active galactic nuclei (AGN) and millisecond pulsars].
+					</aside>
+					<h3> Some predictions</h3>
+
+				</section>
+
+
+
+
+
+
 
                     <section>
+
+							<h3>El Bulgo Galáctico</h3>
+
+
+
+<div id="aladin-lite-div" style="width:900px;height:600px;" align='center'></div>
+<script type="text/javascript" src="//aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:60, target: "CXOGBS_J174404.3-260925", cooFrame: "galactic"});
+
+aladin.addCatalog(A.catalogFromVizieR('J/ApJS/210/18','CXOGBS_J174404.3-260925'));
+</script>
+
+
+
+
+
+
+						<div style="margin-top: .5em;  line-height: 1">
+
+							<h3> 1640 fuentes de rayos X  </h3>
+						</div>
+
+
+
+<!--								<div style="margin-top: .5em; font-size: .75em; line-height: 1">
+<h3 class='fragment' data-fragment-index='2'  > <i>Lugar perfecto para buscar por binarias funetes de rayos X.</i></h3>
+</div> -->
+				</section>
+
+
+
+
+
+
+                    <section>
+
+			    <aside class='notes'>
+				    http://www.gemini.edu/node/12605
+				    VV extinction map, Vista Variables in the Via Lactea
+				    260 observations. 2 ks each. 
+silicates, carbon, form in supernova. Co, NH3. 
+
+mean (J − Ks) color of the
+RC stars and comparing it to that of a region of know extinction,
+named Baade’s Window. RC is Red Clump giants. al coverage and deep near-IR photometry are necessary.
+Both reddening and structural properties can be obtained from the photometric analysis of RC giants across the Galactic bulge. RC giants are core-helium burning stars, equivalent of the horizontal branch stars in old metal-poor populations, and are easily identified in bulge color-magnitude diagrams. Their intrinsic magnitude has a fairly well understood dependence on population properties such as age or metallicity
+
+			    </aside>
 
 							<h3>El Bulgo Galáctico</h3>
 
@@ -545,7 +631,10 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
 
 				<section>
 
-
+					<aside class='notes'> 
+						1) White dw 2) Magnetic CV 3) Cynus X-1 (HighMass
+						4) W uma binary 5) RSCVN 6) stars
+					</aside>
 					<div height='100px'>
 					<h2>Un zoologico de fuentes de rayos X</h2>
 					<h4>¿Cómo se distinguen unas de otras?</h4>
@@ -561,7 +650,7 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
 								<div>
 									<img width="300" src="images/GBS/wumabinary.jpg" alt="Grenoble INP" class="logo" />
 									<img width="300" src="images/GBS/rscvn2.jpg" alt="G-SCOP" class="logo" />
-									<img width="300" src="images/GBS/starsMorgan.png" alt="INRIA" class="logo" />
+									<img width="300" src="images/GBS/amcvnwaves.jpg" alt="INRIA" class="logo" />
 								</div>
 </div>
 
@@ -592,31 +681,21 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
 				</section>
 
 
-				<section>
-					<aside class='notes'>
-						700 would be non-compact stars
-						(mostly RS CVn and W UMa stars), about 600 would be cataclysmic variables and about 300 would be X-ray binaries. maller numbers of  sources  are  expected  in  a  wide  var ety  of  other  classes  [e.g.background active galactic nuclei (AGN) and millisecond pulsars].
-					</aside>
-					<h3> Some predictions</h3>
-
-				</section>
-
 
 
 				<section>
 
 					<ul>
 						<li>Radio:</li>
-						<ul><li>VLA Maca matcing</li></ul>
+						<ul><li> Very Large Array Sky Survey</li></ul>
 						<li>Infrared:</li>
-						<ul><li>VVV</li></ul>
+						<ul><li>Vista Variables in the Via Lactea (VVV) survey</li></ul>
 						<li>Optical</li>
 						<ul><li>Blanco (Photometry)</li></ul>
 						<ul><li>VIMOS, Gemini, ... (Spectra)</li></ul>
 					</ul>
 
 				</section>
-
 
 
 
@@ -629,12 +708,38 @@ The main idea is to image an area of 6x1 degrees centered on the Galactic Center
 	<!-- Detective Work -->
 
 	<section data-state="sky" data-chapter="Detective Work">
+		<section>
 
-		<h1> Detective Work </h1>
+		<h2> Detective Work </h2>
+		<h3> Algunos ejemplos </h3>
 <form action="/action_page.php" method="get">
   <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
   <input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car<br>
 </form>
+
+	</section>
+
+
+
+
+	<section>
+
+		<h2> CX 40: X-ray/Radio/Optical</h2>
+		<h5> Maccarone, Torres et al. (2012)</h5>
+
+
+<div id="aladin-lite-div2" style="width:900px;height:600px;" align='center'></div>
+<script type="text/javascript" src="//aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var aladin = A.aladin('#aladin-lite-div2', {survey: "P/2MASS/color", fov:15, target: "CXOGBS_J174404.3-260925", cooFrame: "galactic"});
+</script>
+
+
+
+
+
+
+
 
 	</section>
 	<!--End Detective Work -->
