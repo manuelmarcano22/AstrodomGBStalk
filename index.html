@@ -191,7 +191,7 @@ body {
 			<ul>
                                     <li>Galileo Galileo (1610):</li>
 				    <div class="block">
-					    "La Galaxia no es sino una innumerable muchedumbre de estrellas reunidas en conglomerados."</div>
+					    "La Via Lactea no es sino una innumerable muchedumbre de estrellas reunidas en conglomerados."</div>
 
                                     <li>William Herschel (1784):</li>
 						<figure style="float: right; width: 100%">
@@ -678,12 +678,15 @@ sources.
 				<section>
 
 					<ul>
+						<li> X-ray </li>
+						<ul><li> <em>Chandra</em> </li></ul>
+
 						<li>Radio:</li>
 						<ul><li> Very Large Array Sky Survey</li></ul>
 						<li>Infrared:</li>
 						<ul><li>Vista Variables in the Via Lactea (VVV) survey</li></ul>
-						<li>Optical</li>
-						<ul<li>Optical Gravitational Lensing Experimen</li></ul>
+						<li>Optical:</li>
+						<ul><li>Optical Gravitational Lensing Experiment</li></ul>
 						<ul><li>Blanco (Photometry)</li></ul>
 						<ul><li>VIMOS, Gemini, ... (Spectra)</li></ul>
 					</ul>
@@ -1288,7 +1291,7 @@ riod.
 						</aside>
 
 
-		<h2> Acretores Ocultos: X-ray/Optical</h2>
+		<h2> CX377: Acretores Ocultos</h2>
 		<h5> Wu et al. (2015)</h5>
 
 
@@ -1302,7 +1305,9 @@ var aladin = A.aladin('#aladin-lite-div4', {survey: "P/2MASS/color", fov:15, tar
 
 var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 3});
 aladin.addOverlay(overlay);
-overlay.add(A.circle(265.038058, -28.790455, .3, {color: 'cyan'})); // radius in degre1
+
+overlay.add(A.circle(265.038058, -27.790455, .3, {color: 'cyan'})); // radius in degre1
+
 
 
 </script>
@@ -1313,12 +1318,36 @@ overlay.add(A.circle(265.038058, -28.790455, .3, {color: 'cyan'})); // radius in
 					</section>	
 
 
+
+				<section>
+					<h3> El Espectro </h3>
+					<h5> ¿Y las lineas de emision? </h5>
+
+
+
+								<img src="images/GBS/cx377spec1.png" width="100%"  />
+
+<div style="margin-top: .4em;  line-height: 1">
+	<h3  > <i> Necesitamos ver más cerca  </i></h3>
+</div>
+
+				</section>
+
+				<section>
+					<h3> El Espectro </h3>
+					<h5> Candidato disco de acreción  </h5>
+
+
+
+								<img src="images/GBS/cx377spec2.png" width="75%"  />
+
+
+				</section>
+
+
+
+
 				</section> <!--Hidden -->
-
-
-
-
-
 
 				<section data-state="sky" data-chapter="">
 
@@ -1329,8 +1358,8 @@ overlay.add(A.circle(265.038058, -28.790455, .3, {color: 'cyan'})); // radius in
 						</aside>
 
 
-		<h2> My project</h2>
-		<h5> UV projects</h5>
+		<h2> Mi projecto</h2>
+		<h5> Fuentes Ultraviletas</h5>
 
 
 <div id="aladin-lite-div6" style="width:900px;height:600px;" align='center'></div>
@@ -1343,15 +1372,134 @@ var aladin = A.aladin('#aladin-lite-div6', {survey: "P/2MASS/color", fov:15, tar
 
 var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 3});
 aladin.addOverlay(overlay);
-overlay.add(A.circle(265.038058, -28.790455, .3, {color: 'cyan'})); // radius in degre1
 
 
+// Fuentes uv
+overlay.add(A.circle(265.038058, -31.790455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.038058, -31.790455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.038058, -30.790455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(267.038058, -29.990455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.038058, -26.590455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.038058, -26.290455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(267.038058, -28.790455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.038058, -31.890455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.038058, -31.990455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(267.638058, -29.290455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(267.638058, -30.590455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.638058, -28.990455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(268.638058, -27.790455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.9638058, -27.090455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.9638058, -26.890455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(268.9638058, -27.990455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.638058, -25.5790455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.3838058, -27.1790455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(268.13838058, -28.5790455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.43838058, -26.5890455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(268.43838058, -28.13890455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.13838058, -28.033890455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(268.03838058, -28.793890455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.983838058, -30.283890455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(267.83838058, -28.983890455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(267.83838058, -30.03890455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.73838058, -30.4890455, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.073838058, -31.72, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.29, -25.49, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.26, -28.049, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.14, -28.094, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(268.708, -27.893, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(268.22, -28.712, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(267.4, -30.54, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(267.36, -29.77, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(267.34, -30.53, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.644, -30.57, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(266.25, -26.53, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.41, -27.61, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.28, -26.784, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.17, -28.12, .2, {color: 'cyan'})); // radius in degre1
+overlay.add(A.circle(265.04, -28.03, .2, {color: 'cyan'})); // radius in degre1
 </script>
 
 
 
 
 					</section>	
+
+					<section>
+
+						<aside class='notes'>
+ 500 seconds in duration sqift
+						</aside>
+
+						<h3>La data </h3>
+
+					<ul>
+						<li> X-ray </li>
+						<ul><li> Chandra </li></ul>
+
+						<li>UV:</li>
+						<ul><li> Swift UVOT (UV-Optical Telescope)</li></ul>
+						<li>Optical:</li>
+						<ul><li>VIMOS</li></ul>
+					</ul>
+
+
+
+
+					</section>
+
+					<section>
+						<aside class='notes'>
+Each spectral energy distribution was modeled with a
+best-fitting reddened (solid line) and an unreddened (dashed
+black line) curve. Error bounds (dashed blue line) were
+also included for the reddened curve based on uncertainty
+through black body calculation, approximately 0.3 magnitudes
+in variance.
+						</aside>
+
+						<h3> Identificacion </h3>
+						<h5> Primer paso </h5>
+
+								<img src="images/GBS/sedcx26.png" width="55%"  />
+
+
+					</section>
+
+					<section>
+
+						<h5> Espectro de VIMOS </h5>
+
+
+<script
+    src="js/cx59notnorm.js"
+    id="86843a4d-7ec2-49b9-b287-4c1f942bbd52"
+    data-bokeh-model-id="8b1891aa-bd7b-47a9-b5f4-ec7513d4c9f7"
+    data-bokeh-doc-id="84f75ad8-1a1d-4683-8432-fc9840e88dd4"
+></script>
+
+
+
+
+
+					</section>
+
+					<section>
+
+						<h5> Espectro </h5>
+
+
+<script
+    src="js/cx59.js"
+    id="ab66b99e-57ef-4e47-8d10-3c06e7b81725"
+    data-bokeh-model-id="0157a18c-e04d-4ff8-bdc1-20b329450cdb"
+    data-bokeh-doc-id="cd25848f-1723-4707-856a-3d20b6b71dbb"
+></script>
+
+
+					</section>
+
+
+
 
 
 				</section> <!--UV -->
